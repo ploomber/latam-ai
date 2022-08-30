@@ -53,38 +53,15 @@ python check.py
 jupyter lab
 ```
 
-#### **Opción 2.** JupyterLab hosteado en un servidor
+#### **Opción 2.** JupyterLab desde MyBinder
 
-Para simplificar la configuración, te ofrecemos un JupyterLab hosteado en un servidor.
+Para simplificar la configuración, puedes utilizar MyBinder con el entorno que hemos  preparado para ti.
 
-[Regístrate aquí](https://docs.ploomber.io/en/latest/cloud/api-key.html). Luego, accesa al [JupyterLab aquí](https://docs.ploomber.io/en/latest/cloud/guide.html#hosted-jupyterlab).
+Para habilitar el repositorio desde MyBinder, basta con abrir el [este link](https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252FREADME.md%26branch%3Dmain) o dar click en el siguiente botón:
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252FREADME.md%26branch%3Dmain)
 
-Una vez que JupyterLab haya iniciado:
-
-**Paso 1:** Clona el repositorio al que has hecho _Fork_.
-
-```sh
-git clone https://github.com/{tu-usuario}/latam-ai
-cd latam-ai
-```
-
-Si ya lo has clonado, [sincronízalo con el repo original.](https://stackoverflow.com/a/65401892/709975)
-
-**Paso 2:** Instala las dependencias.
-
-```sh
-# Crea un entorno virtual
-conda create --name ploomber-workshop python=3.9 --yes
-
-# Activa el entorno
-conda activate ploomber-workshop
-
-# Instala los requerimientos
-pip install -r requirements.txt
-```
-
-**Paso 3:** Verifica tu configuración local.
+Puededs verificar tu configuración local ejecutando lo siguiente desde una terminal dentro de MyBinder:
 
 ```sh
 python check.py

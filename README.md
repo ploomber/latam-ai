@@ -26,33 +26,33 @@ git clone https://github.com/{tu-usuario}/latam-ai
 cd latam-ai
 ```
 
-- Si usas [conda](https://www.google.com/search?q=miniconda):
+- Si usas [conda](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands):
 
-    ```sh
-    # Crea un entorno virtual
-    conda create --name ploomber-workshop python=3.9 --yes
+  ```sh
+  # Crea un entorno virtual
+  conda create --name ploomber-workshop python=3.9 --yes
 
-    # Activa el entorno
-    conda activate ploomber-workshop
+  # Activa el entorno
+  conda activate ploomber-workshop
 
-    # Instala los requerimientos
-    pip install -r requirements.txt
-    ```
+  # Instala los requerimientos
+  pip install -r requirements.txt
+  ```
 
 - Si usas `pip`:
 
-    ```sh
-    # Crea un entorno virtual
-    python -m venv ploomber-workshop
+  ```sh
+  # Crea un entorno virtual
+  python -m venv ploomber-workshop
 
-    # Activa el entorno (si usas Windows, revisa la nota debajo)
-    source ploomber-workshop/bin/activate
+  # Activa el entorno (si usas Windows, revisa la nota debajo)
+  source ploomber-workshop/bin/activate
 
-    # Instala los requerimientos
-    pip install -r requirements.txt
-    ```
+  # Instala los requerimientos
+  pip install -r requirements.txt
+  ```
 
-    *Nota:* Si utilizas Windows, el comando para activar el entorno es diferente, [da click aquí](https://docs.python.org/3/library/venv.html) y encontrarás una tabla con el comando de ejecución dependiendo tu sistema operativo.
+  *Nota:* Si utilizas Windows, el comando para activar el entorno es diferente, [da click aquí](https://docs.python.org/3/library/venv.html) y encontrarás una tabla con el comando de ejecución dependiendo tu sistema operativo.
 
 Para iniciar JupyterLab localmente:
 
@@ -60,24 +60,17 @@ Para iniciar JupyterLab localmente:
 jupyter lab
 ```
 
-### **Option 2.** JupyterLab hosteado en un servidor
+### **Opción 2.** JupyterLab desde MyBinder
 
-Para simplificar la configuración, te ofrecemos un JupyterLab hosteado en un servidor.
+Para simplificar la configuración, puedes utilizar MyBinder con el entorno que hemos  preparado para ti.
 
-[Regístrate aquí](https://docs.ploomber.io/en/latest/cloud/api-key.html). Luego, accesa al [JupyterLab aquí](https://docs.ploomber.io/en/latest/cloud/guide.html#hosted-jupyterlab).
+Para habilitar el repositorio desde MyBinder, basta con abrir el [este link](https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252FREADME.md%26branch%3Dmain) o dar click en el siguiente botón:
 
-
-Una vez que JupyterLab haya iniciado, clona tu repositorio al que haz hecho Fork:
-
-```sh
-# Clona el repo (sustituye por tu usuario)
-git clone https://github.com/{tu-usuario}/latam-ai
-cd latam-ai
-```
+[![Binder](https://mybinder.org/badge_logo.svg)](https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252FREADME.md%26branch%3Dmain)
 
 ## Probando la configuración 
 
-Par aprobar tu configuración, ejecuta o siguiente (puede  tomar algunos segundos):
+Para aprobar tu configuración, ejecuta lo siguiente desde una terminal (puede tomar algunos segundos):
 
 ```
 python check.py

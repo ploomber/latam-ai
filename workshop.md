@@ -194,7 +194,7 @@ ploomber nb --inject
 
 ![injected-cell](static/injected.png)
 
-### 1.5 - Parametrización de pipeline
+### 1.5 - Parametrización de un pipeline
 
 > Introduciremos el concepto de parametrización, que nos permite ejecutar nuestro pipeline con diferentes parámetros. La parametrización nos ayuda a aplicar el mismo análisis a datos adicionales para organizar nuestros experimentos.
 

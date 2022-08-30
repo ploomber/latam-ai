@@ -23,4 +23,4 @@ jobs:
       - name: Test workshop
         run: |
           jupytext workshop.md --to ipynb
-          papermill workshop.ipynb
+          papermill workshop.ipynb /dev/null

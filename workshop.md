@@ -264,7 +264,7 @@ ploomber task load --force
 
 ```sh
 cd material
-ploomber task --env--sample false load
+ploomber task --env--sample false load --force
 ```
 
 <!-- #region -->

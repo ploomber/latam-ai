@@ -65,9 +65,9 @@ jupyter lab
 
 Para simplificar la configuración, puedes utilizar MyBinder con el entorno que hemos  preparado para ti.
 
-Para habilitar el repositorio desde MyBinder, basta con abrir el [este link](https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252FREADME.md%26branch%3Dmain) o dar click en el siguiente botón:
+Para habilitar el repositorio desde MyBinder, basta con abrir el [este link](https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252Fworkshop.md%26branch%3Dmain) o dar click en el siguiente botón:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252FREADME.md%26branch%3Dmain)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252Fworkshop.md%26branch%3Dmain)
 
 ## Probando la configuración 
 

@@ -88,7 +88,7 @@ Si todo está  en orden, verás el sigueitne mensaje:
 > Everything is working correctly!
 
 
-If you have any issues setting up, send us a message on our [community's](https://ploomber.io/community) `#ask-anything` channel.
+Si presentas algún problema con la configuración, envíanos un mensaje en el canal `#ask-anything` de [nuestra comunidad](https://ploomber.io/community) y resolveremos cualquier  duda que tengas.
 
 ## Contenidos del taller 
 

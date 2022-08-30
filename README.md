@@ -8,7 +8,7 @@
 
 **Facilitadores:** [Eduardo Blancas](https://github.com/edublancas) y [Rodolfo Ferro](https://github.com/RodolfoFerro)
 
-> *Por favor sigue las instrucciones de configuración previas al taller.* Si presentas algún problema, envíanos un [mensaje a través de Slack](https://ploomber.io/community). Si abres este archivo desde JupyterLab, no olvides ejeccutar la siguiente celda para suscribirte a nuestro newsletter.
+> *Por favor sigue las instrucciones de configuración previas al taller.* Si presentas algún problema, envíanos un [mensaje a través de Slack](https://ploomber.io/community). Si abres este archivo desde JupyterLab, no olvides ejecutar la siguiente celda para suscribirte a nuestro newsletter.
 
 
 ```sh

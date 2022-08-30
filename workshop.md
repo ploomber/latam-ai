@@ -1,3 +1,17 @@
+---
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .md
+      format_name: markdown
+      format_version: '1.3'
+      jupytext_version: 1.14.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
 <p align="center" width="100%">
   <img src="https://ploomber.io/images/logo.svg" width="20%"><br><strong>¡Apóyanos con una estrella ⭐️  en el repo de Ploomber! <a href="https://github.com/ploomber/ploomber" target="_blank">Da click aquí.</a></strong>
 </p>
@@ -6,7 +20,11 @@
 
 # **Ploomber:** Desarrolla código listo para producción desde Jupyter, VSCode o PyCharm
 
-```sh
+
+> *Por favor sigue las instrucciones de configuración previas al taller.* Si presentas algún problema, envíanos un [mensaje a través de Slack](https://ploomber.io/community). Si abres este archivo desde JupyterLab, no olvides ejecutar la siguiente celda para suscribirte a nuestro newsletter.
+
+
+```python
 from IPython.display import HTML
 HTML("""
 <div id="revue-embed">
@@ -109,7 +127,7 @@ Abre el archivo [material/pipeline.html](material/pipeline.html)
 
 > El archivo `pipeline.yaml` es donde declararemos las tareaes en nuestro flujo. `soorgeon refactor` ha generado uno para nosotros dado que hemos refactorizado un cuaderno existente, pero si vamos a iniciar un proyecto desde cero podríamos crearlo  manualmente:
 
-```py
+```python
 from pathlib import Path
 from IPython.display import Markdown
 
@@ -145,7 +163,7 @@ ls
 
 También podemos utilizar la API de Python (¡ésta se actualiza en tiempo real!):
 
-```py
+```python
 from ploomber.spec import DAGSpec
 
 dag = DAGSpec('material/pipeline.yaml').to_dag()
@@ -159,7 +177,7 @@ cd material
 ploomber status
 ```
 
-```py
+```python
 dag.status()
 ```
 
@@ -308,7 +326,7 @@ tasks:
 
 Snippet para inicializar modelos desde una cadena de texto:
 
-```py
+```python
 import importlib
 
 module_name, _, attribute = model.rpartition('.')

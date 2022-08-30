@@ -8,8 +8,26 @@
 
 **Facilitadores:** [Eduardo Blancas](https://github.com/edublancas) y [Rodolfo Ferro](https://github.com/RodolfoFerro)
 
-> *Por favor sigue las instrucciones de configuración previas al taller.* Si presentas algún problema, envíanos un [mensaje a través de Slack](https://ploomber.io/community).
+> *Por favor sigue las instrucciones de configuración previas al taller.* Si presentas algún problema, envíanos un [mensaje a través de Slack](https://ploomber.io/community). Si abres este archivo desde JupyterLab, no olvides ejeccutar la siguiente celda para suscribirte a nuestro newsletter.
 
+
+```sh
+from IPython.display import HTML
+HTML("""
+<div id="revue-embed">
+  <form action="https://www.getrevue.co/profile/ploomber/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+  <div class="revue-form-group" id="email-text-field">
+    <input class="revue-form-field" placeholder="Your email address" type="email" name="member[email]" id="member_email">
+  </div>
+  <div class="revue-form-actions" id="submit-btn">
+    <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+  </div>
+  </form>
+</div>
+
+<div class="newsletter-copy">¡Gracias por suscribirte!</div>
+""")
+```
 
 ## Instrucciones de configuración ⚙️
 

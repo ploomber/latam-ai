@@ -5,7 +5,11 @@
 #       extension: .py
 #       format_name: percent
 #       format_version: '1.3'
-#       jupytext_version: 1.13.6
+#       jupytext_version: 1.14.0
+#   kernelspec:
+#     display_name: Python 3
+#     language: python
+#     name: python3
 # ---
 
 # %% tags=["soorgeon-imports"]
@@ -20,11 +24,8 @@ import pandas as pd
 upstream = None
 product = None
 
-# %%
-print(f'sample is: {sample}')
-
 # %% [markdown]
-# # Predicting median house value
+# # Predicción del valor medio de una casa
 #
 # ## Load
 

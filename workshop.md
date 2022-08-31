@@ -4,7 +4,7 @@ jupyter:
     text_representation:
       extension: .md
       format_name: markdown
-      format_version: '1.3'
+      format_version: "1.3"
       jupytext_version: 1.14.0
   kernelspec:
     display_name: Python 3
@@ -127,7 +127,7 @@ Abre el archivo [material/pipeline.html](material/pipeline.html)
 
 > El archivo `pipeline.yaml` es donde declararemos las tareaes en nuestro flujo. `soorgeon refactor` ha generado uno para nosotros dado que hemos refactorizado un cuaderno existente, pero si vamos a iniciar un proyecto desde cero podríamos crearlo manualmente:
 
-```python
+````python
 from pathlib import Path
 from IPython.display import Markdown
 
@@ -140,7 +140,7 @@ def display(path):
     return Markdown(f'```{ext}\n# content of {str(path)}\n\n{content}\n```')
 
 display('material/pipeline.yaml')
-```
+````
 
 ### 1.3 - La interfaz de línea de comandos (CLI)
 
@@ -232,7 +232,6 @@ cd material
 ploomber build
 ```
 
-
 Convierte `param` en un _placeholder_:
 
 ```yaml
@@ -256,7 +255,6 @@ sample: true
 
 **Ejercicio 2:** Convierte `sample` en un _placeholder_, luego crea un archivo `env.yaml`, declara el parámetro `sample` ahí y verifica que el cuaderno se ejecuta sin problema alguno:
 
-
 ```sh
 cd material
 ploomber task load --force
@@ -273,7 +271,7 @@ ploomber task --env--sample false load --force
 
 ### 2.1 - Añadiendo nuevas tareas
 
-> Vamos a mostrar cómo agregar nuevas tareas a nuestro piepeline existente y cómo establecer las relaciones de dependencia entre las tareas.
+> Vamos a mostrar cómo agregar nuevas tareas a nuestro pipeline existente y cómo establecer las relaciones de dependencia entre las tareas.
 
 ```yaml
 - source: {path/to/source}
@@ -287,7 +285,7 @@ ploomber task --env--sample false load --force
 ploomber scaffold
 ```
 
-**Ejercicio 3**: Añade un nuevo cuaderno `tasks/fit.py`, luego ejecuta `ploomber scaffold` (dentro de la carpeta `material`) para crear el cuaderno. Posteriormente, agrega el código de `tasks/linear-regression.py`.
+**Ejercicio 3**: Añade una nueva tarea `tasks/fit.py` en `pipeline.yaml`, luego ejecuta `ploomber scaffold` (dentro de la carpeta `material`) para crear el cuaderno. Posteriormente, agrega el código de `tasks/linear-regression.py`.
 
 ### 2.2 - _Builds_ incrementales
 

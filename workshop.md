@@ -5,9 +5,9 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.14.1
+      jupytext_version: 1.14.0
   kernelspec:
-    display_name: Python 3 (ipykernel)
+    display_name: Python 3
     language: python
     name: python3
 ---
@@ -20,9 +20,7 @@ jupyter:
 
 # **Ploomber:** Desarrolla código listo para producción desde Jupyter, VSCode o PyCharm
 
-
-> *Por favor sigue las instrucciones de configuración previas al taller.* Si presentas algún problema, envíanos un [mensaje a través de Slack](https://ploomber.io/community). Si abres este archivo desde JupyterLab, no olvides ejecutar la siguiente celda para suscribirte a nuestro newsletter.
-
+> _Por favor sigue las instrucciones de configuración previas al taller._ Si presentas algún problema, envíanos un [mensaje a través de Slack](https://ploomber.io/community). Si abres este archivo desde JupyterLab, no olvides ejecutar la siguiente celda para suscribirte a nuestro newsletter.
 
 ```python
 from IPython.display import HTML
@@ -46,13 +44,13 @@ HTML("""
 
 > Motivaremos el proyecto y explicaremos por qué invertir en organizar nuestro proyecto como un flujo (**_pipeline_**) modular (múltiples scripts/notebooks) en lugar de un gran script/notebook nos ayuda a desarrollar más rápido y mejora la colaboración.
 
-
 <!-- #region -->
+
 ### Antes de comenzar...
 
 #### **Opción 1.** Configuración de un entorno local
 
-> **Importante:** Si no tuviste oportunidad de configurar tu entorno local previo al taller, te recomendamos ir a la *Opción 2*, dado que es más simple y rápida de abordar.
+> **Importante:** Si no tuviste oportunidad de configurar tu entorno local previo al taller, te recomendamos ir a la _Opción 2_, dado que es más simple y rápida de abordar.
 
 Verifiquemos tu configuración. Ejecuta lo siguiente en tu terminal:
 
@@ -83,26 +81,29 @@ python check.py
 
 **Paso 4:** Inicia JupyterLab
 
-
 ```sh
 jupyter lab
 ```
 
 #### **Opción 2.** JupyterLab desde MyBinder
 
-Para simplificar la configuración, puedes utilizar MyBinder con el entorno que hemos  preparado para ti.
+Para simplificar la configuración, puedes utilizar MyBinder con el entorno que hemos preparado para ti.
 
 Para habilitar el repositorio desde MyBinder, basta con abrir el [este link](https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252Fworkshop.md%26branch%3Dmain) o dar click en el siguiente botón:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://binder.ploomber.io/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252Fworkshop.md%26branch%3Dmain)
+
+> Si llegas a presentar problemas utilizando el servidor MyBinder que desde Ploomber hemos proporcinado para ti, puedes utilizar MyBinder desde su propio servidor a través de [este link](https://mybinder.org/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252Fworkshop.md%26branch%3Dmain) o desde el siguiente botón:
+>
+> [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ploomber/binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fploomber%252Flatam-ai%26urlpath%3Dlab%252Ftree%252Flatam-ai%252Fworkshop.md%26branch%3Dmain)
 
 Puededs verificar tu configuración local ejecutando lo siguiente desde una terminal dentro de MyBinder:
 
 ```sh
 python check.py
 ```
-<!-- #endregion -->
 
+<!-- #endregion -->
 
 ### 1.1 - Refactorizando un cuaderno **_legacy_**
 
@@ -122,10 +123,9 @@ ploomber plot --backend d3
 
 Abre el archivo [material/pipeline.html](material/pipeline.html)
 
-
 ### 1.2 - El archivo `pipeline.yaml`
 
-> El archivo `pipeline.yaml` es donde declararemos las tareaes en nuestro flujo. `soorgeon refactor` ha generado uno para nosotros dado que hemos refactorizado un cuaderno existente, pero si vamos a iniciar un proyecto desde cero podríamos crearlo  manualmente:
+> El archivo `pipeline.yaml` es donde declararemos las tareaes en nuestro flujo. `soorgeon refactor` ha generado uno para nosotros dado que hemos refactorizado un cuaderno existente, pero si vamos a iniciar un proyecto desde cero podríamos crearlo manualmente:
 
 ```python
 from pathlib import Path
@@ -141,7 +141,6 @@ def display(path):
 
 display('material/pipeline.yaml')
 ```
-
 
 ### 1.3 - La interfaz de línea de comandos (CLI)
 
@@ -182,13 +181,14 @@ dag.status()
 ```
 
 <!-- #region -->
+
 ### 1.4 - Usando Ploomber desde JupyterLab, VSCode o PyCharm
 
 > Mostraremos cómo los profesionales pueden usar Ploomber desde su editor de texto favorito.
 
 #### **JupyterLab:**
 
-No es necesario hacer algo extra, el complemento se instala y configura automáticamente al instalar **Ploomber**. Los archivos `.py` deberían abrirse como cuadernos automáticamente, si no lo hacen, haz click derecho sobre ellos y selecciona *Abrir con > Cuaderno*:
+No es necesario hacer algo extra, el complemento se instala y configura automáticamente al instalar **Ploomber**. Los archivos `.py` deberían abrirse como cuadernos automáticamente, si no lo hacen, haz click derecho sobre ellos y selecciona _Abrir con > Cuaderno_:
 
 ![open-with-notebook](static/lab-open-with-notebook.png)
 
@@ -223,7 +223,8 @@ ploomber nb --inject
     sample: true
 ```
 
-**Ejercicio 1:** Modifica `material/pipeline.yaml` y añade un parámtero al  cuaderno `material/tasks/load.py` (bajo la sección de `params`), posterior a ello añade una nueva celda al cuaderno para imprimir el valor del parámetro. Luego, ejecuta lo siguiente y verifica si la salida del cuaderno (`material/output/load.ipynb`) imprime el valor corrrecto:
+**Ejercicio 1:** Modifica `material/pipeline.yaml` y añade un parámtero al cuaderno `material/tasks/load.py` (bajo la sección de `params`), posterior a ello añade una nueva celda al cuaderno para imprimir el valor del parámetro. Luego, ejecuta lo siguiente y verifica si la salida del cuaderno (`material/output/load.ipynb`) imprime el valor corrrecto:
+
 <!-- #endregion -->
 
 ```sh
@@ -231,7 +232,7 @@ cd material
 ploomber build
 ```
 
-<!-- #region -->
+
 Convierte `param` en un _placeholder_:
 
 ```yaml
@@ -242,11 +243,10 @@ Convierte `param` en un _placeholder_:
     df: output/load-df.parquet
     nb: output/load.ipynb
   params:
-    sample: '{{sample}}'
+    sample: "{{sample}}"
 ```
 
 Añade `env.yaml`:
-
 
 ```yaml
 # content of env.yaml
@@ -255,7 +255,7 @@ sample: true
 ```
 
 **Ejercicio 2:** Convierte `sample` en un _placeholder_, luego crea un archivo `env.yaml`, declara el parámetro `sample` ahí y verifica que el cuaderno se ejecuta sin problema alguno:
-<!-- #endregion -->
+
 
 ```sh
 cd material
@@ -268,6 +268,7 @@ ploomber task --env--sample false load --force
 ```
 
 <!-- #region -->
+
 ## Bloque 2: Características avanzadas
 
 ### 2.1 - Añadiendo nuevas tareas
@@ -295,9 +296,11 @@ ploomber scaffold
 ![incremental](static/incremental.png)
 
 **Ejercicio 4**: Añade una sentencia print a la tarea `tasks/fit.py` (o a cualquier otra tarea) y ejecuta `ploomber build`. Verifica que sólo esa tarea, y cualesquiera dependientes de ella, se ejecutan.
+
 <!-- #endregion -->
 
 <!-- #region -->
+
 ## Bloque 3: Escalando tus experimeintos
 
 ### 3.1 - Ejecutando experimentos en parelelo
@@ -312,16 +315,16 @@ executor: parallel
 tasks:
   # ... more tasks here
 
-- source: tasks/fit.py
-  name: fit-
-  product:
-    nb: output/fit.ipynb
-  grid:
-    model:
-      - sklearn.linear_model.LinearRegression
-      - sklearn.svm.SVR
-      - sklearn.ensemble.GradientBoostingRegressor
-      - sklearn.ensemble.RandomForestRegressor
+  - source: tasks/fit.py
+    name: fit-
+    product:
+      nb: output/fit.ipynb
+    grid:
+      model:
+        - sklearn.linear_model.LinearRegression
+        - sklearn.svm.SVR
+        - sklearn.ensemble.GradientBoostingRegressor
+        - sklearn.ensemble.RandomForestRegressor
 ```
 
 Snippet para inicializar modelos desde una cadena de texto:
@@ -344,11 +347,11 @@ lr = getattr(module, attribute)
 
 Plataformas soportadas (open-source):
 
-* Kubernetes (via Argo Workflows)
-* Kubeflow
-* SLURM
-* Airflow
-* AWS Batch
+- Kubernetes (via Argo Workflows)
+- Kubeflow
+- SLURM
+- Airflow
+- AWS Batch
 
 ### 3.3 - Ploomber Cloud (free tier):
 
@@ -395,10 +398,11 @@ ploomber cloud download '*'
 ```
 
 **Ejercicio 6:** Ejecuta tu pipeline en la nube.
+
 <!-- #endregion -->
 
 ## Conoce más sobre Ploomber
 
-* [Documentación de Ploomber](https://docs.ploomber.io/)
-* [Repository de GitHub](https://github.com/ploomber/ploomber) - ¡Muestra tu apoyo con una ⭐️!
-* [Comunidad en Slack](https://ploomber.io/community)
+- [Documentación de Ploomber](https://docs.ploomber.io/)
+- [Repository de GitHub](https://github.com/ploomber/ploomber) - ¡Muestra tu apoyo con una ⭐️!
+- [Comunidad en Slack](https://ploomber.io/community)

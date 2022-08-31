@@ -332,7 +332,8 @@ import importlib
 
 module_name, _, attribute = model.rpartition('.')
 module = importlib.import_module(module_name)
-lr = getattr(module, attribute)
+model_name = getattr(module, attribute)
+lr = model_name()
 ```
 
 **Ejercicio 5:** Cambia al ejecutor `parallel` y crea una tarea `tasks/fit.py` para entrenar varios modelos al mismo tiempo.

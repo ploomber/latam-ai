@@ -46,7 +46,8 @@ import importlib
 
 module_name, _, attribute = model.rpartition('.')
 module = importlib.import_module(module_name)
-lr = getattr(module, attribute)
+model_name = getattr(module, attribute)
+lr = model_name()
 
 # %%
 lr.fit(X_train, y_train)
